@@ -4,7 +4,7 @@ FROM node:14.18.2
 # set working directory
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
-RUN chmod -R 755 /usr/src/app
+RUN chmod 755 /usr/src/app
 
 # add `/usr/src/app/node_modules/.bin` to $PATH
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
